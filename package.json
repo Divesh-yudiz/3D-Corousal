@@ -1,0 +1,27 @@
+{
+  "name": "Heritage Hues",
+  "version": "1.0.0",
+  "description": "Heritage Hues By Divesh Adole",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./base.html --open",
+    "build": "npm run build ./base.html --public-url ./public/",
+    "prebuild": "rm -rf dist",
+    "postbuild": "mv ./dist/base.html ./index.html"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "popmotion": "^8.6.4",
+    "stats.js": "^0.17.0",
+    "three": "^0.101.1"
+  }
+}
