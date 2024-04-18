@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./base.html --open",
-    "build": "npm run build ./base.html --public-url ./dist/",
+    "build": "npm run prebuild && parcel build ./base.html --public-url ./dist/",
     "prebuild": "rm -rf dist",
     "postbuild": "mv ./dist/base.html ./index.html"
   },
